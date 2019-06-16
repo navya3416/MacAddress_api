@@ -1,0 +1,6 @@
+*TEST
+.git
+.*
+*.md
+*.tmp
+temp
