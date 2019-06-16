@@ -27,6 +27,6 @@ resp = requests.get(url=url, params=params)
 info = resp.json()    
 
 try:
-  print("MAC Addressis " + MacAddress+ " is associated with "+info['vendorDetails']['companyName'] )
+  print("MAC Address " + MacAddress+ " is associated with "+info['vendorDetails']['companyName'] )
 except:
   print ("Data not found")
