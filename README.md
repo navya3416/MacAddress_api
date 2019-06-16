@@ -8,7 +8,7 @@ Prerequisites
   1. Any Linux server(mine is ubuntu 16.04) with Docker installed aand refer the document to install the docker https://docs.docker.com/install/linux/docker-ce/ubuntu/ 
   
   
-  2.signup in https://macaddress.io and get the apikey to used in program to generate the output.
+   2.signup in https://macaddress.io and get the apikey to used in program to generate the output.
   
 Getting Started
 =======================================
