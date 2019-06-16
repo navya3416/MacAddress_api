@@ -8,7 +8,7 @@ Prerequisites
   1. Any Linux server(mine is ubuntu 16.04) with Docker installed aand refer the document to install the docker https://docs.docker.com/install/linux/docker-ce/ubuntu/ 
   
   
-   2.signup in https://macaddress.io and get the apikey to used in program to generate the output.
+     2.signup in https://macaddress.io and get the apikey to used in program to generate the output.
   
 Getting Started
 =======================================
@@ -18,11 +18,11 @@ Getting Started
        Second stage is to copy the program to working directory and used ENTRYPOINT configure to run time executable with the CMD to set
        additional default arguments of apikey and MAC Address
     
-                   $ docker build -t <IMAGENAME> . (or) $ docker build -t <IMAGENAME> <pathofDIR>
+                   $ docker build -t <IMAGENAME:tag> . (or) $ docker build -t <IMAGENAME> <pathofDIR>
          
  Step 2: Run the above built image with the CMD arguments OF apikey and MAC Adderess
     
-                  $docker run <IMAGENAME> <APIKEY> <MACADDRESS>
+                  $docker run <IMAGENAME:tag> <APIKEY> <MACADDRESS>
                     
  output looks like :
                                                                                            
