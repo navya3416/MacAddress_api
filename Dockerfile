@@ -22,6 +22,6 @@ RUN pip3 install --user -r requirements.txt
 FROM base
 #copy the source code file to home directory above created user macapi
 COPY mac.py /home/macapi
-#using entrypoint configure a container that will run as an executable and too set fairly stable default commands and arguments and then use either form of CMD to set additional defaults that are more likely to be changed.
+#using entrypoint configure a container that will run as an executable and to set fairly stable default commands and arguments and then use either form of CMD to set additional defaults that are more likely to be changed.
 ENTRYPOINT ["python3", "/home/macapi/mac.py"]
 
