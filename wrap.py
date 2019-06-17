@@ -9,4 +9,4 @@ while(a==1):
     FNULL = open(os.devnull, 'w')
     retcode = subprocess.call(["docker","build", "-t", "navya","."])
     subprocess.call(["docker","run","navya:latest",apikey,mac])
-    a = input("do you want check another mac if yes enter 1 otherwise enter 0: ")
+    a = int(input("do you want check another mac if yes enter 1 otherwise enter 0: "))
