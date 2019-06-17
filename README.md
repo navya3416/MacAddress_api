@@ -28,3 +28,23 @@ Getting Started
  output looks like :
                                                                                            
                Mac Address 44:38:39:ff:ef:57  is associated with Cumulus Networks, Inc
+
+step 4: Here having python script <wrap.py> to automate the docker commands.Now run the above script.
+
+                                 python3 wrap.py  
+ 
+       when you run above command it will ask to prompt the apikey and give apikey value 
+         
+                               enter apikey: <your api key>
+
+       After that it will ask about to prompt mac address give mac address which you want search
+       
+                              enter macaddress: <give the which you want to search>                         
+
+       Output is Like
+       
+                    Mac Address 44:38:39:ff:ef:57  is associated with Cumulus Networks, Inc
+                    do you want check another mac if yes enter 1 otherwise enter 0: 
+  
+      If you want check another Mac Address enter 1 dont want enter 0
+      
