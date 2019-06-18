@@ -33,6 +33,7 @@ Getting Started
                Mac Address 44:38:39:ff:ef:57  is associated with Cumulus Networks, Inc
 
 step 4: Here having python script <wrap.py> to automate the docker commands.Now run the above script.
+st
 
                                  python3 wrap.py  
  
@@ -51,3 +52,8 @@ step 4: Here having python script <wrap.py> to automate the docker commands.Now 
   
       If you want check another Mac Address enter 1 dont want enter 0
       
+
+step 5: if user found any difficult run the script when user type Help it will show READme.md file
+    
+                                        python3 wrap.py Help
+     
