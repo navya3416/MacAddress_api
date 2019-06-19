@@ -3,6 +3,8 @@ import os
 import subprocess
 import docker
 import sys
+import csv
+import json
 # opening file READme.md when user type Help otherwise it will prompt to apikey
 option=''
 try:
@@ -21,7 +23,7 @@ else:
 # defining variable mac for user input of macaddress
         mac = input("enter macaddress: ")
 # output will be redirected to stdout rather printing on the terminal and using subprocess execute docker commands
-        process = subprocess.Popen(["docker","build", "-t", "navya","."], )stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(["docker","build", "-t", "navya","."], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdout, stderr = process.communicate()
         reader = csv.DictReader(stdout.decode('ascii').splitlines(),delimiter='|',skipinitialspace=True)
         for row in reader:
