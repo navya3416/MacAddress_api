@@ -13,9 +13,9 @@ Prerequisites
   
   3.signup in https://macaddress.io and get the apikey to used in program to generate the output.
   
-Getting Started
+WORKFLOW
 =======================================
- step 1: Take the above code mac.py 
+ step 1: Implemnted the  mac.py program to Mac Address associated with which company
  
  Step 2: Next will take the Dockerfile to dockerize the above program. In here we using multi-stage builds to build the Image.
        First stage build is the base image that will install all packages that need to execute the program.
@@ -32,8 +32,11 @@ Getting Started
                                                                                            
                Mac Address 44:38:39:ff:ef:57  is associated with Cumulus Networks, Inc
 
-step 4: Here having python script <wrap.py> to automate the docker commands.Now run the above script.
-st
+
+Usage
+=====================================
+ Here having python script <wrap.py> to automate the docker image buildingand running process.Now run the above script.
+
 
                                  python3 wrap.py  
  
@@ -43,7 +46,7 @@ st
 
        After that it will ask about to prompt mac address give mac address which you want search
        
-                              enter macaddress: <give the which you want to search>                         
+                              enter macaddress: <give the mac address which you want to search>                         
 
        Output is Like
        
