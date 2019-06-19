@@ -21,7 +21,11 @@ else:
 # defining variable mac for user input of macaddress
         mac = input("enter macaddress: ")
 # output will be redirected to stdout rather printing on the terminal and using subprocess execute docker commands
-        FNULL = open(os.devnull, 'w')
-        retcode = subprocess.call(["docker","build", "-t", "navya","."], stdout=FNULL, stderr=subprocess.STDOUT)
+        process = subprocess.Popen(["docker","build", "-t", "navya","."], )stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        stdout, stderr = process.communicate()
+        reader = csv.DictReader(stdout.decode('ascii').splitlines(),delimiter='|',skipinitialspace=True)
+        for row in reader:
+            output = json.dumps(row)
+            print(output)
         subprocess.call(["docker","run","navya:latest",apikey,mac])
         a = int(input("do you want check another mac if yes enter 1 otherwise enter 0: "))
