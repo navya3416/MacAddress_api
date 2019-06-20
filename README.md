@@ -12,33 +12,12 @@ Prerequisites
   
   
   3.signup in https://macaddress.io and get the apikey to used in program to generate the output.
-  
-WORKFLOW
-=======================================
- step 1: Implemnted the  mac.py program to Mac Address associated with which company
- 
- Step 2: Next will take the Dockerfile to dockerize the above program. In here we using multi-stage builds to build the Image.
-       First stage build is the base image that will install all packages that need to execute the program.
-       Second stage is to copy the program to working directory and used ENTRYPOINT configure to run time executable with the CMD to set
-       additional default arguments of apikey and MAC Address
-    
-                   $ docker build -t <IMAGENAME:tag> . (or) $ docker build -t <IMAGENAME> <pathofDIR>
-         
- Step 3: Run the above built image with the CMD arguments OF apikey and MAC Adderess
-    
-                  $docker run <IMAGENAME:tag> <APIKEY> <MACADDRESS>
-                    
- output looks like :
-                                                                                           
-               Mac Address 44:38:39:ff:ef:57  is associated with Cumulus Networks, Inc
-
-
 Usage
 =====================================
- Here having python script <wrap.py> to automate the docker image buildingand running process.Now run the above script.
+ Here having python script <mac_utility.py> to automate the docker image buildingand running process.Now run the above script.
 
 
-                                 python3 wrap.py  
+                                 python3 mac_utility.py  
  
        when you run above command it will ask to prompt the apikey and give apikey value 
          
@@ -55,8 +34,7 @@ Usage
   
       If you want check another Mac Address enter 1 dont want enter 0
       
-
-step 5: if user found any difficult run the script when user type Help it will show READme.md file
+ If user found any difficult run the script when user type Help it will show READme.md file
     
-                                        python3 wrap.py Help
+                                        python3 mac_utility.py Help
      
