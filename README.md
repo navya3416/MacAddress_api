@@ -34,7 +34,7 @@ Usage
                     Mac Address 44:38:39:ff:ef:57  is associated with Cumulus Networks, Inc
                     do you want check another mac if yes enter 1 otherwise enter 0: 
   
-      If you want check another Mac Address enter 1 dont want enter 0
+      If you want check another Mac Address give 1 as input if not type 0 it will exit program
       
  If user found any difficult run the script when user type Help it will show READme.md file
     
